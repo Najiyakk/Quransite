@@ -5,6 +5,17 @@
     <!-- Favicon link -->
     <link rel="icon" type="image/jpeg" href="images.jpeg">
     <link rel="stylesheet" href="index.css">
+    <!-- PWA support -->
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#2c3e50">
+
+<script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("service-worker.js")
+      .then(() => console.log("Service Worker Registered"));
+  }
+</script>
+
 </head>
 <body>
 
@@ -22,5 +33,6 @@
 </body>
   
 </html>
+
 
    
